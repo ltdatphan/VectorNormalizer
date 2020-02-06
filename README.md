@@ -61,6 +61,7 @@ VECTOR: [ 1.000, 2.000, 3.000 ] NORMALIZED: [ 0.267, 0.535, 0.802 ]
 ```
 
 However, you can provide the size of the vector on 1 line, and provide the rest of its elements in different lines and the program would work as well.
+
 For example:
 ```
 3
@@ -77,7 +78,7 @@ For example:
 ```
 No matter the location of the zero is, either at the starting or ending of a line, the program will stop.
 
-## Authors
+## Author
 
 * **Dat Phan** - *Whole project* - [ltdphan](https://github.com/ltdatphan)
 
