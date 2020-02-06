@@ -1,4 +1,4 @@
-# VectorNormalizer
+# Vector Normalizer
 A small C program that normalizes a vector from input. It does not have any GUI and all interactions are made using the terminal. 
 
 ## Getting Started
@@ -19,54 +19,69 @@ gcc --version
 
 ## Running the program
 
-
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+Change the working directory to the space where the files are. 
+To compile the program, do the following:
 
 ```
-Give an example
+gcc -o vectnorm vectnormmain.c vectnormfuncs.c -lm
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
+In this case, I named my running program to be vectnorm. 
+After compilation, use the following command to run the program. 
 
 ```
-Give an example
+./vectnorm
 ```
 
-## Deployment
+### Example
 
-Add additional notes about how to deploy this on a live system
+Upon running the program, you would get a simple guide on how to use the program.
+```
+./vectnorm
 
-## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+=== Welcome to the Vector normalizer ===
+Made by Dat Phan
 
-## Contributing
+Start by entering the size of your vector and followed by the values of each values in your array.
+Once you have declared a vector size of n, the program will not show any output until you have provided enough arguments.
+To exit, provide an input of 0 or interrupt using Ctrl + C or Ctrl + D.
+```
+Let's make try to normalize a vector of size 3 with numbers 1, 2, 3 as its elements.
+To do so, we would provide the following input:
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+```
+3 1 2 3
+```
+The output we would get is:
 
-## Versioning
+```
+The size of this vector is: 3. The results are as follow:
+VECTOR: [ 1.000, 2.000, 3.000 ] NORMALIZED: [ 0.267, 0.535, 0.802 ]
+```
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+However, you can provide the size of the vector on 1 line, and provide the rest of its elements in different lines and the program would work as well.
+For example:
+```
+3
+1 2
+3
+The size of this vector is: 3. The results are as follow:
+VECTOR: [ 1.000, 2.000, 3.000 ] NORMALIZED: [ 0.267, 0.535, 0.802 ]
+```
+
+If you want to exit the program, you can provide input of 0 or press Ctrl + C or Ctrl + D:
+For example:
+```
+3 0 0 0
+```
+No matter the location of the zero is, either at the starting or ending of a line, the program will stop.
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Dat Phan** - *Whole project* - [ltdphan](https://github.com/ltdatphan)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Template brought to you by [PurpleBooth](https://github.com/PurpleBooth)
